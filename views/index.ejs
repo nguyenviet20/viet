@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>ds Bank</title>
+    <link rel='stylesheet' href='/public/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Danh Sách User4</h1>
+    <a href="/form-add"><button type="submit">Thêm Mới</button></a>
+    <table border="1">
+      <tr>
+        <th>LatLong</th>
+        <th>Role</th>
+        <th>Open Hour</th>
+        <th>Default Account</th>
+        <th>Bank Name</th>
+        <th>Branch Name</th>
+        <th>Acction</th>
+      </tr>
+      <% userfours.forEach(item => {%>
+        <tr>
+          <td><%= item._LatLong %></td>
+          <td><%= item.role %></td>
+          <td><%= item.open %></td>
+          <td><%= item.daccount %></td>
+          <td><%= item.bname %></td>
+          <td><%= item.brName %></td>
+          <td><a href="/form-update/<%= item._id %>">Update</a>||<a href="/form-delete/<%= item._id %>">Delete</a></td>
+        </tr>
+      <%})%>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<h1>Sửa</h1>
+<form action="/update" method="post">
+
+    <table border="1">
+        <tr>
+            <th>LABLE</th>
+            <th>VALUE</th>
+        </tr>
+        <tr>
+            <td>ID:</td>
+            <td><input type="text" name="id" value="<%= userfour.id %>"></td>
+        </tr>
+        <tr>
+            <td>Role:</td>
+            <td><input type="text" name="role" value="<%= userfour.role %>"></td>
+        </tr>
+        <tr>
+            <td>Open Hour:</td>
+            <td><input type="number" name="open" value="<%= userfour.open %>"></td>
+        </tr>
+        <tr>
+            <td>Default Account:</td>
+            <td><input type="number" name="daccount" value="<%= userfour.daccount %>"></td>
+        </tr>
+        <tr>
+            <td>Bank Name:</td>
+            <td><input type="text" name="bname" value="<%= userfour.bname %>"></td>
+        </tr>
+        <tr>
+            <td>Branch Name:</td>
+            <td><input type="text" name="brName" value="<%= userfour.brName %>"></td>
+        </tr>
+
+    </table>
+
+
+    <button type="submit">Sửa</button>
+</form>
